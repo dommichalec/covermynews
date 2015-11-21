@@ -1,5 +1,5 @@
-<%= render 'static_pages/home' %>
-
+<%= render 'static_pages/home' unless user_signed_in? %>
+<br>
 <% @links.each do |link| %>
   <div class="link row clearfix">
     <h2>
