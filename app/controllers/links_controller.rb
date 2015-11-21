@@ -5,10 +5,10 @@ class LinksController < ApplicationController
   # GET /links.json
   def index
     if params[:category].blank?
-      @links = Link.all.order("created_at DESC")
+      @links = Link.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
     else
       @category_id = Category.find_by(name: params[:category]).id
-      @links = Link.where(category_id: @category_id).order("created_at DESC")
+      @links = Link.where(category_id: @category_id).order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
     end
   end
 
