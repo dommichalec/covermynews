@@ -23,6 +23,7 @@
   </div>
 <% end %>
 <%= will_paginate @links %>
+<%= render 'layouts/footer' %>
 <script type='text/javascript'>
   mixpanel.track("Page Loaded", {"Page Name": "links/index.html.erb"});
 </script>
