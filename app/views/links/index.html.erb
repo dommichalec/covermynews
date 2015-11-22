@@ -2,10 +2,10 @@
 <br>
 <% @links.each do |link| %>
   <div class="link row clearfix">
-    <h2>
+    <h4>
       <%= link_to link.title, link %><br>
       <small class="author">Posted <%= time_ago_in_words(link.created_at) %> by <%= link.user.name %></small>
-    </h2>
+    </h4>
 
     <div class="btn-group">
       <a class="btn btn-default btn-sm" href="<%= link.url %>">Visit Link</a>
@@ -22,3 +22,5 @@
     </div>
   </div>
 <% end %>
+
+<%= will_paginate @links %>
