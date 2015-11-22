@@ -22,6 +22,7 @@
     </div>
   </div>
 <% end %>
-
-mixpanel.track("Land on homepage");
 <%= will_paginate @links %>
+<script type='text/javascript'>
+  mixpanel.track("Page Loaded", {"Page Name": "links/index.html.erb"});
+</script>

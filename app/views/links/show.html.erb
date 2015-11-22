@@ -36,3 +36,7 @@
   <br>
   <%= f.submit "Add Comment", class: "btn btn-primary" %>
 <% end %>
+
+<script type='text/javascript'>
+  mixpanel.track("Page Loaded", {"Page Name": "links/show.html.erb"});
+</script>
