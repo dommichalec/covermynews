@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 1.0.0', group: :doc
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.0.6'
