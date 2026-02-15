@@ -14,7 +14,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.0.6'
 gem 'elasticsearch-rails', '~> 0.1.8'
-gem 'elasticsearch-model', '~> 0.1.8'
+gem 'elasticsearch-model', '~> 0.1.9'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server
